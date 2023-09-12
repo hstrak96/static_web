@@ -1,3 +1,3 @@
 # static_web
 
-Jednoduchý statický web - školní projket.
+Jednoduchý statický web - školní projekt.
