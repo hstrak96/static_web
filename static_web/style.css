@@ -1,0 +1,599 @@
+@charset "utf-8";
+
+html {
+	/*background: url(img/pozadi.png);*/
+	/*background-color: rgb(208, 0, 39);*/
+	background-color: rgb(255, 255, 255);
+	/*cervena live rgb(203, 36, 32)*/
+	/*sediva rgb(234, 234, 234)*/
+}
+
+body {
+	/*background-color: rgb(208, 0, 39);*/
+	/*background-color: rgb(255, 255, 255);*/
+	/*width: 980px;*/
+	background-image: url(img/pozadi.png);
+	margin: auto;
+	padding: 0px;
+}
+
+.liverpool_logo {
+	width: 75px;
+	/*margin-left: 25%;
+	position: relative;*/
+	float: left;
+}
+
+.champions {
+	max-width: 101.1%;
+	margin: -5px;
+}
+
+.head {
+	width: auto;
+	position: relative;
+	z-index: 2;
+	font-family: Verdana;
+}
+
+.hlavicka1 {
+	height: 75px;
+	background-color: rgb(203, 36, 32);  	
+	position: fixed; /* Set the navbar to fixed position */
+  	top: 0; /* Position the navbar at the top of the page */
+ 	width: 100%; /* Full width */
+}
+
+.logo_menu {
+	margin: auto;
+	max-width: 50%;
+	min-width: 980px;
+}
+
+.hlavicka2 {
+	height: 75px;
+}
+
+.obsah {
+	position: relative;
+	z-index: 1;
+	background-color: rgb(255, 255, 255);
+	padding: 0 5px 0 5px;
+	border-top: 5px solid rgb(234, 234, 234);
+	margin: auto;
+	max-width: 50%;
+	min-width: 980px;
+	text-align: justify;
+	padding-bottom: 10px;
+}
+
+.paticka {
+	height: 75px;
+	text-align: center;
+	background-color: rgb(234, 234, 234);
+	margin-top: -16px;
+}
+
+.titulek {
+	float: left;
+	color: rgb(255, 255, 255);
+	font-family: Verdana;
+}
+
+nav ul {
+    background-color: rgb(203, 36, 32);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 20px;
+    overflow: hidden;
+    float: right;
+   	margin: 15px 0 15px 0;
+   	height: auto;
+}
+
+nav ul li {
+    display: inline-block;
+    padding: 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+nav ul li:hover {
+    background-color: rgb(128, 0, 0);
+}
+
+a{
+	color: rgb(255, 255, 255);
+}
+
+.aktivni {
+	background-color: rgb(128, 0, 0);
+}	
+
+.clanek {
+	padding: 20px;
+	padding-top: 0;
+	height: auto;
+}
+
+.clanek2 {
+	padding: 20px;
+	padding-top: 0;
+	height: auto;
+	min-height: 1060px;
+}
+
+.tabulka_logo {
+	background: url(img/sprite.png) -462px -530px no-repeat;
+	width: 170px;
+    height: 28px;
+    margin-bottom: 5px;	
+}
+/** TABULKA **/ 
+.klub {
+	text-align: left;
+}
+
+table {
+    border: solid 1px #DDEEEE;
+    border-collapse: collapse;
+    border-spacing: 0;
+    font: normal 12px 'Montserrat', sans-serif;
+    text-align: center;
+
+    float: left;
+}
+table th {
+    background-color: #DDEFEF;
+    border: solid 1px #DDEEEE;
+    color: #336B6B;
+    padding: 8px;
+    text-align: left;
+    text-shadow: 1px 1px 1px #fff;
+}
+table td {
+    border: solid 1px #DDEEEE;	
+    color: #333;
+    padding: 8px;
+    text-shadow: 1px 1px 1px #fff;
+}
+table {
+    overflow: hidden;
+    z-index: 1;
+}
+table td, table th {
+    position: relative;
+    font-size: 14px;
+}
+table td:hover::before {
+    background-color: #f2f2f2 ;
+    content:'\00a0';
+    height: 100%;
+    left: -5000px;
+    position: absolute;
+    top: 0;
+    width: 10000px;
+    z-index: -1;
+}
+table tbody td:hover::after {
+    background-color: #f2f2f2;
+    content:'\00a0';
+    height: 10000px;
+    left: 0;
+    position: absolute;
+    top: -5000px;
+    width: 100%;
+    z-index: -1;
+}
+/** KONEC TABULKY **/
+
+.nadpis_stranky {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 900;
+	margin-top: 10px;
+	font-size: 28px;
+	color: rgb(203, 36, 32);
+	background-color: rgb(251, 251, 251);
+	text-align: center;
+	text-transform: uppercase;
+	border-bottom: 1px solid rgb(200,16,46);
+	margin-right: -25px;
+	margin-left: -25px;
+}
+
+.odstavec {
+	font-family: Verdana;
+	font-size: 15px;
+}
+
+.prava {
+	width: 500px;
+	float: right;
+	margin: 0 0 15px 15px;
+}
+
+h3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 20px;
+	color: rgb(203, 36, 32);
+	border-bottom: 2px solid rgb(203, 36, 32);
+}
+
+.klopp {
+	float: right;
+	width: 450px;
+	margin: 15px 0 15px 15px;
+}
+
+.anfield {
+	display: block;
+ 	margin-left: auto;
+  	margin-right: auto;
+  	margin-bottom: 20px;
+ 	width: 65%;
+}
+
+.hrac_portret {
+	width: 180px;
+	margin-bottom: -15px;
+}
+
+.hrac {
+	width: 180px;
+	height: 260px;
+	display: inline-block;
+	margin-bottom: 10px;
+	background-color: rgb(234, 234, 234);
+}
+
+.hrac2 {
+	width: 180px;
+	height: 260px;
+	display: inline-block;
+	margin-bottom: 10px;
+	background-color: rgb(234, 234, 234);
+	margin-right: 5px;
+}
+
+.popisek_hrace {
+	font: normal 14px 'Montserrat', sans-serif;
+	padding: 8px;
+}
+
+.popisek_hrace_oxlade {
+	font: normal 14px 'Montserrat', sans-serif;
+	padding: 2px 5px 5px 5px;
+}
+
+.obrazky {
+	width: 100%;
+	height: 300px;
+	margin: auto;
+	padding-left: 5px;
+}
+
+.obrazek {
+	width: 32%;
+	height: 300px;
+	display: inline-block;
+	overflow: hidden;
+	border: 2px solid rgb(200,16,46);
+}
+
+.zoom {
+  padding: 60px;
+  background-size: 300px 300px;
+  transition: transform .6s;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+}
+
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5); 
+}
+
+/** SELECTOR SPRITE **/
+.liverpool, .mancity, .tottenham, .manunited, .arsenal, .chelsea, .wolves, .leicester, .everton, .watford, .westham,
+		.bournemouth, .crystal,.newcastle, .brighton, .southampton, .burnley, .norwich, .astonvilla, .sheffield{
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-top: -2px;
+}
+.liverpool{
+	background: url('img/badges-20.png') 0 -200px;
+}
+.mancity{
+	background: url('img/badges-20.png') -220px 0;
+}
+.tottenham{
+	background: url('img/badges-20.png') -240px 20px;
+}
+.manunited{
+	background: url('img/badges-20.png') -220px -180px;
+}
+.arsenal{
+	background: url('img/badges-20.png') 0 -40px;
+}
+.chelsea{
+	background: url('img/badges-20.png') -120px -120px;
+}
+.wolves{
+	background: url('img/badges-20.png') 20px -40px;
+}
+.leicester{
+	background: url('img/badges-20.png') -200px -120px;
+}
+.everton{
+	background: url('img/badges-20.png') -20px -160px;
+}
+.watford{
+	background: url('img/badges-20.png') 120px 20px;
+}	
+.westham{
+	background: url('img/badges-20.png') 80px 20px;
+}
+.bournemouth{
+	background: url('img/badges-20.png') -40px -100px;
+}
+.crystal{
+	background: url('img/badges-20.png') -40px -140px;
+}
+.newcastle{
+	background: url('img/badges-20.png') 0 -220px;
+}
+.brighton{
+	background: url('img/badges-20.png') -80px -80px;
+}
+.southampton{
+	background: url('img/badges-20.png') 200px 220px;
+}
+.burnley{
+	background: url('img/badges-20.png') -20px -120px;
+}
+.sheffield{
+	background: url('img/badges-20.png') -260px -140px;
+}
+.astonvilla{
+	background: url('img/badges-20.png') -40px -60px;
+}
+.norwich{
+	background: url('img/badges-20.png') -100px -220px;
+}
+/** KONEC SELECTORU - SPRITE **/
+
+/** SCOREBOARD **/
+.scoreboard{
+	margin-top: -20px;
+	float: right;
+	font-family: 'Montserrat', sans-serif;
+	position: relative;
+	float: right;
+}
+
+.kontejner{
+	position: relative;
+	width: 200px;
+	height: 22px;
+	background-color: #ddd;
+	border-bottom: 1px solid black;
+	margin: auto auto 2px auto;
+	text-align: center;
+}
+
+.element_team{
+	width: 46px;
+	height: 20px;
+	float: left;
+	padding-top: 2px;
+}
+
+.element_logo{
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin: 3px 2px 0 2px;
+}
+
+.vnitrek{
+	width: 60px;
+	height: 16px;
+	float: left;
+	margin-top: 3px;
+	background-color: grey;
+	color: white;
+}
+
+.overlay {
+	position: absolute;
+	bottom: 3px;
+	left: 70px;
+  	background-color: white;
+ 	overflow: hidden;
+  	width: 60px;
+  	height: 16px;
+  	-webkit-transform: scale(0);
+  	-ms-transform: scale(0);
+  	transform: scale(0);
+  	-webkit-transition: 0s ease;
+  	transition: 0s ease;
+}	
+
+.kontejner:hover .overlay {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  color: rgb(203, 36, 32);;
+}
+
+.kontejner:hover{
+	/*background-color: #e90052;*/
+	background-color: rgb(203, 36, 32);
+	color: white;
+}	
+
+.liga_logo {
+	float: left;
+}
+
+.dropdown {
+	display: none;
+}
+
+.download {
+	background-color: rgb(203, 36, 32);
+	color: rgb(255, 255, 255);
+	padding: 3px;
+	border-radius: 3px;
+}
+
+.sestava {
+	text-decoration: none;
+}
+
+
+@media screen and (max-width: 980px) {
+  	body {
+		width: 100%;
+  	}
+
+  	.obsah {
+  		max-width: none;
+  		min-width: 0px;
+    	width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  	}
+
+  	.logo_menu {
+		width: 100%;
+  	}
+
+  	.hlavicka1 {
+  		width: 100%;
+  	}
+
+  	table {
+  		display: block;
+  		overflow-x: scroll;
+  		max-width: 100%;
+  		margin-bottom: 20px;
+  		margin-left: 10%;
+  	}
+
+  	.tabulka_logo {
+  		margin-left: 10%;
+  	}
+
+  	.clanek2 {
+  		min-height: 1850px;
+  		margin: auto;
+  	}
+
+  	.scoreboard {
+  		margin-right: 40%
+  	}
+
+  	.obrazek {
+  		width: 31%;
+  	}
+
+  	.obrazky {
+  		width: 100%;
+  	}
+
+  	.hrac, .hrac2 {
+  		margin-right: : auto;
+  	}
+
+  	.head {
+  		width: 50px;
+  	}
+
+  	.hlavicka1 {
+ 		width: auto; /* Full width */
+  	}
+
+  	.prava {
+  		max-width: 450px;
+  	}
+
+  	nav {
+  		display: none;
+  	}
+
+  	.dropbtn {
+  		background-color: rgb(203, 36, 32);;
+  		color: white;
+  		padding: 16px;
+  		font-size: 20px;
+ 		border: none;
+  		cursor: pointer;
+  		height: 75px;
+  		width: 150px;
+		font-family: Verdana;
+	}
+
+	.dropdown {
+	  	position: fixed;
+	 	display: inline-block;
+		top: 0;
+	  	right: 0;
+	  	height: 75px;
+	 	font-family: Verdana;
+	}
+
+	.dropdown-content {
+	  	display: none;
+	  	position: absolute;
+	  	right: 0;
+	  	background-color: rgb(203, 36, 32);
+	  	min-width: 160px;
+	  	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	  	z-index: 1;
+	}
+
+	.dropdown-content a {
+	  	color: rgb(255, 255, 255);
+	  	padding: 12px 16px;
+	  	text-decoration: none;
+	  	display: block;
+	}
+
+	.dropdown-content a:hover {
+		background-color: rgb(128, 0, 0);
+	}
+
+	.dropdown:hover .dropdown-content {
+	  	display: block;
+	}
+
+	.dropdown:hover .dropbtn {
+	  	background-color: rgb(128, 0, 0);
+	}
+}
+
+
+@media screen and (max-width: 735px) {
+	.clanek2 {
+		min-height: 2100px;
+	}
+
+	  .scoreboard {
+  		/*float: none;*/
+  		margin-right: 30%
+  	}
+
+  	table {
+  		max-width: 400px;
+  	}
+
+  	.prava, .klopp {
+  		max-width: 100%;
+  	}
+
+  	table {
+  		max-width: 90%;
+  	}
+}
